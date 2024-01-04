@@ -92,6 +92,18 @@
 //     class : 11,
 // };
 
+// for (let i in student){
+//     console.log(i);
+// }
+
+// for (let i in student){
+//     console.log(student);
+// }
+
+// for (let i in student){
+//     console.log(student[i]);
+// }
+
 // for (let key in student){
 //     console.log("key is =", key, "and its value is =", student[key]);
 // }
