@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops - JS</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- <style>
+
+        h1{
+            color: rgb(112, 112, 212);
+            text-decoration: underline 4px rgb(133, 94, 12);
+        }
+
+        .box{
+            box-sizing: border-box;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .box2{
+            border: 2px solid black;
+            box-sizing: border-box;
+            /* text-overflow: ellipsis; */
+            overflow: auto;
+        }
+
+        .box3{
+            margin: 30px;
+            padding: 20px;
+            border: 5px solid rgb(180, 21, 21);
+            background-color: rgb(255, 228, 196);
+            /* text-align: center; */
+            box-sizing: border-box;
+            overflow: auto;
+        }
+
+        
+        h2{
+            text-decoration: underline;
+            margin: 10px;
+            padding: 10px;
+        }
+        
+        .inline{
+            display: inline;
+        }
+        body{
+            margin: 15px;
+            padding: 15px;
+            background-color: rgb(223, 255, 244);
+        }
+
+        .mar-r{
+            margin-right: 0;
+        }
+
+        .mar-l{
+            margin-left: 0;
+        }
+
+        .pad-r{
+            padding-right: 0;
+        }
+
+        .pad-l{
+            padding-left: 0;
+        }
+
+        pre{
+            white-space: pre-wrap;
+        }
+        .center{
+            text-align: center;
+        }
+        .underline{
+            text-decoration: underline 2px rgb(133, 94, 12);
+        }
+
+        .notice{
+            text-align: center;
+            font-size: 2em;
+            font-weight: bold;
+            border: 4px solid rgba(255, 0, 0, 0.349);
+            color: rgba(255, 0, 0, 0.349);
+            background-color: rgba(236, 195, 195, 0.301);
+            height: 10vh;
+            width: 60vw;
+            /* margin: 20px auto; */
+            padding: 20px;
+            transform: rotate(-40deg);
+            position: fixed;
+            top: 40vh;
+            right: 15vw;
+            overflow: auto;
+        }
+    </style> -->
+</head>
+<body>
+    
+    <div>
+        <h1 class="center">
+            This page is about Loops in JS
+        </h1>
+    </div>
+
+    <div>
+        <p class="box">There are four types of loops in JS. (1) for Loop, (2) infinite Loop, (3) while Loop, (4) do while Loop.
+    </p>
+    </div>
+    
+
+    <div>
+        <p class="box"><span style="font-weight: 900; text-decoration: rgb(133, 94, 12) underline 4px; color: chocolate; font-size: 30px;"># for Loop:</span>This is the for loop's syntex: <pre class="box box2"><code>for (let i = 1; i&lt= 5; i++){
+    console.log("Abid Shahrier");
+} &lt;!-- this is an alternative way to write (i++) statement: (i = i + 1) but generally we write this (i++)
+        </code></pre> <p class="box">After writing for keyword we add parenthesis. Between the parenthesis we add our loop's three statement. (let i = 1;) is our first complete statement, it is called initializing statement. It sets the value of "i" as 1 in starting. (i &lt= 5;) is our second statement which is called stopping condition. When the value of i will be greater then 5 this statment will stop the loop. It checks the value of i each time before the loop run. (i++) is orur third statement that is called updation condition which updates i each time the loop run.</p>
+        </p>
+
+        <p class="box" style="font-weight: 600;">
+            <span style="color: crimson;" class="underline"># Note:</span> (i) won't exist outside this for loop. Because it is defined only in the block of for loop.
+        </p>
+    </div>
+
+    <div>
+        <p class="box">
+            <span style="font-weight: 900; text-decoration: rgb(133, 94, 12) underline 4px; color: chocolate; font-size: 30px;"># infinite Loop:</span> When  a loop's stopping condition never return false then the loop turns into a infinite loop which never ends.
+        </p>
+    </div>
+
+    <div>
+        <p class="box">
+            <span style="font-weight: 900; text-decoration: rgb(133, 94, 12) underline 4px; color: chocolate; font-size: 30px;"># while Loop:</span> Which thing we can do by for loop exactly same thing we can do by while loop, it is only two different ways to write lops. Here is the syntex of while loop: <pre class="box box2"><code>let i = 0;
+while (i &lt;= 10) {
+      console.log("Abid Shahrier");
+      i++;
+}
+            </code></pre> <p class="box">We write our stopping condition in parenthesis at while loop. In this case generally the work of initialization we do before loop and updation we do inside the loop. Remember this in the end of while loop there wiil be no semicolon.</p>
+        </p>
+    </div>
+
+    <div>
+        <p class="box">
+            <span style="font-weight: 900; text-decoration: rgb(133, 94, 12) underline 4px; color: chocolate; font-size: 30px;"># do-while Loop:</span> In while loop the stopping condition is checked
+        </p>
+    </div>
+    
+
+
+
+
+
+
+
+
+    
+    <div class="box3">
+        <p>
+            <h2 class="center">&lt;pre&gt; tag white space and overflow problem:</h2>
+            
+            The problem is that the `&lt;pre&gt;` tag preserves the whitespace and does not wrap the text by default. You can fix this by using the `white-space` property in CSS and setting it to `pre-wrap`. This will allow the text to wrap according to the available width of the container. You can also use the `word-break` property to break long words if needed. Here is an example of how you can style your `&lt;pre&gt;` tag:<pre class="box2"><code>pre{
+    white-space: pre-wrap;
+    word-break: break-all;
+}
+            </code></pre>
+            You can learn more about the `white-space` and `word-break` properties from [these tutorials](^1^) ²³ or [these questions](^4^) ⁵.<br>
+            
+            (1) html - pre tag- text overflows the box - Stack Overflow. <a href="https://stackoverflow.com/questions/2337534/pre-tag-text-overflows-the-box" target="_blank">visit here</a>. <br>
+            (2) html - How do I wrap text in a pre tag? - Stack Overflow. <a href="https://stackoverflow.com/questions/248011/how-do-i-wrap-text-in-a-pre-tag" target="_blank">visit here</a>. <br>
+            (3) How to Make Pre Tags 100% Responsive in CSS &hyphen; Techstacker. <a href="https://techstacker.com/responsive-pre-tags-css/" target="_blank">visit here</a>. <br>
+            (4) How to wrap a text in a &lt;pre&gt; tag using CSS - GeeksforGeeks. <a href="https://www.geeksforgeeks.org/how-to-wrap-a-text-in-a-pre-tag-using-css/" target="_blank">visit here</a>. <br>
+            (5) undefined. <a href="https://i1032.photobucket.com/albums/a406/dardanov/ie6pre.jpg." target="_blank">visit here</a> <br>
+            (6) undefined. <a href="https://i1032.photobucket.com/albums/a406/dardanov/ff35pre.jpg" target="_blank">visite here</a>. <br>
+        </p>
+    </div>
+    
+    <div class="box3">
+        This is an experimental block about how to use block element as inline element. <br>
+        <h2 class="inline mar-r pad-r"># for Loop:</h2>
+        <p class="inline">This is for loop.</p>
+    </div>
+
+
+
+
+    <div class="notice">
+        I let this page remain incomplete
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
