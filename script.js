@@ -194,6 +194,17 @@
 // let name = "Abid";
 // console.log(name.toLowerCase());  // Convert all the characters to lower case
 
+// LowerCase method
+// let inp = prompt();
+// inp = inp.toString().toLowerCase();
+// // inp.toLowerCase();
+// console.log(inp);
+
+// LowerCase method
+// let inp = prompt("");
+// let lowerCaseInp = inp.toString().toLowerCase();
+// console.log(lowerCaseInp);
+
 
 
 
